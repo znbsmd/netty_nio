@@ -1,9 +1,8 @@
-package com.zjn.nio;
+package com.zjn.niogroupchat;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
-import java.nio.channels.SelectableChannel;
 import java.nio.channels.SelectionKey;
 import java.nio.channels.Selector;
 import java.nio.channels.SocketChannel;
@@ -88,7 +87,7 @@ public class ChatClient {
     public static void main(String[] args) {
 
         //启动我们客户端
-        ChatClient chatClient = new ChatClient();
+       final ChatClient chatClient = new ChatClient();
 
         //启动一个线程, 每个3秒，读取从服务器发送数据
         new Thread() {

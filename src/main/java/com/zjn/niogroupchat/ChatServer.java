@@ -1,4 +1,4 @@
-package com.zjn.nio;
+package com.zjn.niogroupchat;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
